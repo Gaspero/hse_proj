@@ -1,0 +1,11 @@
+sudo -u postgres psql
+
+create database lsdb with owner ls;
+CREATE USER ls WITH PASSWORD 'ls';
+
+
+pip install <название либы>
+pip freeze > reqs.txt
+
+cd /home/fizradev/venv/ls
+source bin/activate

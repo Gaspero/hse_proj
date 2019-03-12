@@ -1,0 +1,22 @@
+server {
+    listen *:80;
+    server_name ls;
+
+    charset utf-8;
+
+    access_log /home/fizradev/venv/ls/ls_source/logs/nginx_access.log;
+    error_log /home/fizradev/venv/ls/ls_source/logs/nginx_error.log;
+
+    location /favicon.ico {
+        access_log off;
+        alias /home/fizradev/venv/ls/ls_source/static/favicon.ico;
+    }
+
+
+#    location / {
+#        include uwsgi_params;
+#        uwsgi_pass unix:/home/fizradev/venv/ls/ls_source/sock;
+#    }
+
+}
+

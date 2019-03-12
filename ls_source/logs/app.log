@@ -1,0 +1,197 @@
+2019-03-12 23:04:29,187 [MainThread  ] [WARNI]  Отсутствует локальный файл настроек. Файл создан из шаблона local_settings.py.tmpl
+2019-03-12 23:04:29,758 [MainThread  ] [ERROR]  No module named 'flask_peewee'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 4, in <module>
+    from flask_peewee.db import Database
+ModuleNotFoundError: No module named 'flask_peewee'
+2019-03-12 23:06:34,854 [MainThread  ] [ERROR]  'user' is an invalid keyword argument for this function
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 13, in init_models
+    db.database.create_tables(ms)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2871, in create_tables
+    model.create_table(**options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5846, in create_table
+    cls._schema.create_all(safe, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5071, in create_all
+    self.create_table(safe, **table_options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 4957, in create_table
+    self.database.execute(self._create_table(safe=safe, **options))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+TypeError: 'user' is an invalid keyword argument for this function
+2019-03-12 23:09:13,351 [MainThread  ] [ERROR]  'user' is an invalid keyword argument for this function
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 13, in init_models
+    db.database.create_tables(ms)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2871, in create_tables
+    model.create_table(**options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5846, in create_table
+    cls._schema.create_all(safe, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5071, in create_all
+    self.create_table(safe, **table_options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 4957, in create_table
+    self.database.execute(self._create_table(safe=safe, **options))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+TypeError: 'user' is an invalid keyword argument for this function
+2019-03-12 23:09:54,104 [MainThread  ] [ERROR]  'user' is an invalid keyword argument for this function
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 13, in init_models
+    db.database.create_tables(ms)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2871, in create_tables
+    model.create_table(**options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5846, in create_table
+    cls._schema.create_all(safe, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5071, in create_all
+    self.create_table(safe, **table_options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 4957, in create_table
+    self.database.execute(self._create_table(safe=safe, **options))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+TypeError: 'user' is an invalid keyword argument for this function
+2019-03-12 23:10:48,937 [MainThread  ] [ERROR]  'DATABASE'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 22, in <module>
+    DB = Database(APP)  # Инициируем работу с БД. Тут же создаюётся таблицы, если их нет в БД.
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask_peewee/db.py", line 14, in __init__
+    self.load_database()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask_peewee/db.py", line 21, in load_database
+    self.database_config = dict(self.app.config['DATABASE'])
+KeyError: 'DATABASE'
+2019-03-12 23:11:14,803 [MainThread  ] [ERROR]  Please specify a "name" and "engine" for your database
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask_peewee/db.py", line 23, in load_database
+    self.database_name = self.database_config.pop('name')
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 22, in <module>
+    DB = Database(APP)  # Инициируем работу с БД. Тут же создаюётся таблицы, если их нет в БД.
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask_peewee/db.py", line 14, in __init__
+    self.load_database()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask_peewee/db.py", line 26, in load_database
+    raise ImproperlyConfigured('Please specify a "name" and "engine" for your database')
+flask_peewee.exceptions.ImproperlyConfigured: Please specify a "name" and "engine" for your database
+2019-03-12 23:12:05,757 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-12 23:15:42,236 [MainThread  ] [ERROR]  cannot import name 'ProductAdditional' from 'models.product' (/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/product.py)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 9, in init_models
+    from models.product import Product, ProductAdditional
+ImportError: cannot import name 'ProductAdditional' from 'models.product' (/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/product.py)
+2019-03-12 23:21:22,442 [MainThread  ] [ERROR]  __init__() got an unexpected keyword argument 'options'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 8, in <module>
+    from models.product import Product, ProductAdditional
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/product.py", line 10, in <module>
+    class Product(DB.Model):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/product.py", line 17, in Product
+    size = CharField(options = ['small', 'medium', 'large'])
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 4129, in __init__
+    super(CharField, self).__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'options'
+2019-03-12 23:23:07,471 [MainThread  ] [ERROR]  No module named 'models.producers'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 9, in <module>
+    from models.producers import Producer
+ModuleNotFoundError: No module named 'models.producers'
+2019-03-12 23:23:28,750 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-12 23:28:10,392 [MainThread  ] [ERROR]  name 'Category' is not defined
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 28, in <module>
+    ADMIN = init_admin(APP, DB)  # Инициируем Админку
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/ui/admin.py", line 30, in init_admin
+    admin.register(Category)
+NameError: name 'Category' is not defined
+2019-03-12 23:28:22,548 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-12 23:32:18,553 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-12 23:35:17,849 [MainThread  ] [ERROR]  No module named 'models.category'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 8, in <module>
+    from models.product import Product, ProductAdditional
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/product.py", line 7, in <module>
+    from models.category import Category
+ModuleNotFoundError: No module named 'models.category'
+2019-03-12 23:36:24,736 [MainThread  ] [ERROR]  name 'Category' is not defined
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 8, in <module>
+    from models.product import Product, ProductAdditional
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/product.py", line 10, in <module>
+    class Product(DB.Model):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/product.py", line 19, in Product
+    category_id = ForeignKeyField(Category, to_field='category_id', null=False)
+NameError: name 'Category' is not defined
+2019-03-12 23:40:28,645 [MainThread  ] [WARNI]   * Debugger is active!
