@@ -5,6 +5,7 @@ import tempfile
 from behave import fixture, use_fixture
 
 from application import APP
+# from flask import app as APP
 
 
 @fixture

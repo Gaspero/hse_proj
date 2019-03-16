@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-
+import os
 from behave import when, then
 
+os.getcwd()
 
 @when('i call categories')
 def get_categories(context):

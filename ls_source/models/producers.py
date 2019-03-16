@@ -8,6 +8,7 @@ class Producer(DB.Model):
 
     producer_id = PrimaryKeyField()
     name = CharField(50, null=False)
+    district = CharField(50, null=False)
     address = CharField(50, null=False)
     workers = IntegerField(100, default=0)
     working_hours = CharField(100, null=False)
