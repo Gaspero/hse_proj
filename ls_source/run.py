@@ -38,6 +38,6 @@ if __name__ == '__main__':
         try:
             log.debug('Launched: application %s' % datetime.now())
             from application import APP
-            APP.run()
+            APP.run(host='0.0.0.0', port=5001)
         except Exception as e:
             log.exception(e)

@@ -1,8 +1,24 @@
 # -*- coding: utf-8 -*-
 
+import sys
+
 from behave import given, when, then
-from models.category import Category
-from models.product import Product
+
+try:
+    sys.path.remove('')
+    from models.category import Category
+    from models.product import Product
+except ValueError:
+    pass
+else:
+    sys.path.append('/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source')
+
+
+#sys.path.append('/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source')
+#from models.category import Category
+#from models.product import Product
+
+
 
 
 @given('a set of items in category')

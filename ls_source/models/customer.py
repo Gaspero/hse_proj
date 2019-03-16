@@ -16,6 +16,7 @@ class Customer(DB.Model):
     birth_day = DateField(null=True)
     create_time = DateTimeField(default=datetime.now, null=False)
     is_active = BooleanField(default=True)
+    district = CharField(50, null=False)
     address = CharField(50, null=False)
     linked_card = IntegerField(16)
 

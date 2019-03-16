@@ -16,7 +16,7 @@ class Product(DB.Model):
     description = CharField(null=False)
     size = CharField()
 
-    category_id = ForeignKeyField(Category, to_field='category_id', null=False)
+    category_id = ForeignKeyField(Category, to_field='category_id', null=True)
 
     class Meta:
         table_name = 'products'

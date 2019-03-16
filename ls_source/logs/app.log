@@ -195,3 +195,185 @@ Traceback (most recent call last):
     category_id = ForeignKeyField(Category, to_field='category_id', null=False)
 NameError: name 'Category' is not defined
 2019-03-12 23:40:28,645 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-13 01:25:46,707 [MainThread  ] [ERROR]  No module named 'flask.current_app'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 6, in init_models
+    from models.category import Category
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/category.py", line 5, in <module>
+    from flask.current_app import DB
+ModuleNotFoundError: No module named 'flask.current_app'
+2019-03-13 23:38:17,502 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-15 22:01:11,960 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-15 23:30:26,408 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 11:08:45,683 [MainThread  ] [ERROR]  No module named 'flask_peewee'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 4, in <module>
+    from flask_peewee.db import Database
+ModuleNotFoundError: No module named 'flask_peewee'
+2019-03-16 11:10:01,327 [MainThread  ] [ERROR]  [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "run.py", line 41, in <module>
+    APP.run()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+OSError: [Errno 48] Address already in use
+2019-03-16 11:13:42,831 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 11:17:25,910 [MainThread  ] [ERROR]  [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 41, in <module>
+    APP.run()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+OSError: [Errno 48] Address already in use
+2019-03-16 11:17:29,391 [MainThread  ] [ERROR]  [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 41, in <module>
+    APP.run()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+OSError: [Errno 48] Address already in use
+2019-03-16 11:17:31,202 [MainThread  ] [ERROR]  [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 41, in <module>
+    APP.run()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+OSError: [Errno 48] Address already in use
+2019-03-16 11:17:37,949 [MainThread  ] [ERROR]  [Errno 48] Address already in use
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 41, in <module>
+    APP.run()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+OSError: [Errno 48] Address already in use
+2019-03-16 11:18:21,218 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 12:11:37,235 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 12:12:36,363 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 12:13:31,795 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 12:14:53,729 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 12:24:38,864 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 12:50:34,358 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 12:50:56,083 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 12:56:23,718 [MainThread  ] [ERROR]  invalid syntax (order.py, line 26)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 26
+    producer_id = ForeignKeyField(Producer, to_field='producer_id', null=False, default=)
+                                                                                        ^
+SyntaxError: invalid syntax
+2019-03-16 13:10:26,424 [MainThread  ] [ERROR]  name 'matcher' is not defined
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 20, in <module>
+    class Order(DB.Model):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 26, in Order
+    producer_id = ForeignKeyField(Producer, to_field='producer_id', null=False, default=matcher(customer_id))
+NameError: name 'matcher' is not defined
+2019-03-16 13:12:19,359 [MainThread  ] [ERROR]  no such column: t1.district
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2714, in execute_sql
+    cursor.execute(sql, params or ())
+sqlite3.OperationalError: no such column: t1.district
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 21, in <module>
+    class Order(DB.Model):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 27, in Order
+    producer_id = ForeignKeyField(Producer, to_field='producer_id', null=False, default=matcher(customer_id))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/logics/some.py", line 8, in matcher
+    for producer in Producer.select().where(Producer.district == cust.district):  # TODO: добавить проверку на раб часы
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 6032, in __iter__
+    self.execute()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 1625, in inner
+    return method(self, database, *args, **kwargs)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 1696, in execute
+    return self._execute(database)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 1847, in _execute
+    cursor = database.execute(self)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2721, in execute_sql
+    self.commit()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2714, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.OperationalError: no such column: t1.district
+2019-03-16 13:13:20,776 [MainThread  ] [ERROR]  no such table: producers
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2714, in execute_sql
+    cursor.execute(sql, params or ())
+sqlite3.OperationalError: no such table: producers
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 21, in <module>
+    class Order(DB.Model):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/models/order.py", line 27, in Order
+    producer_id = ForeignKeyField(Producer, to_field='producer_id', null=False, default=matcher(customer_id))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/ls_source/logics/some.py", line 8, in matcher
+    for producer in Producer.select().where(Producer.district == cust.district):  # TODO: добавить проверку на раб часы
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 6032, in __iter__
+    self.execute()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 1625, in inner
+    return method(self, database, *args, **kwargs)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 1696, in execute
+    return self._execute(database)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 1847, in _execute
+    cursor = database.execute(self)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2721, in execute_sql
+    self.commit()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2714, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.OperationalError: no such table: producers
+2019-03-16 13:16:11,023 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 13:33:46,736 [MainThread  ] [WARNI]   * Debugger is active!
