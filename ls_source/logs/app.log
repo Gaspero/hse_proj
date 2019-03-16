@@ -377,3 +377,4 @@ Traceback (most recent call last):
 peewee.OperationalError: no such table: producers
 2019-03-16 13:16:11,023 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-16 13:33:46,736 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 15:29:41,757 [MainThread  ] [WARNI]   * Debugger is active!
