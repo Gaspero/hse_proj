@@ -379,3 +379,278 @@ peewee.OperationalError: no such table: producers
 2019-03-16 13:33:46,736 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-16 15:29:41,757 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-16 15:40:59,488 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 15:45:12,477 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 15:50:47,360 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 15:51:29,884 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 15:55:25,792 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 19:28:42,744 [MainThread  ] [ERROR]  unable to open database file
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2662, in connect
+    self._initialize_connection(self._state.conn)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+peewee.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/__init__.py", line 14, in init_models
+    db.database.create_tables(ms)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2871, in create_tables
+    model.create_table(**options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5846, in create_table
+    cls._schema.create_all(safe, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5071, in create_all
+    self.create_table(safe, **table_options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 4957, in create_table
+    self.database.execute(self._create_table(safe=safe, **options))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2721, in execute_sql
+    self.commit()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2662, in connect
+    self._initialize_connection(self._state.conn)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+peewee.OperationalError: unable to open database file
+2019-03-16 19:29:17,341 [MainThread  ] [ERROR]  unable to open database file
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2662, in connect
+    self._initialize_connection(self._state.conn)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+peewee.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/__init__.py", line 14, in init_models
+    db.database.create_tables(ms)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2871, in create_tables
+    model.create_table(**options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5846, in create_table
+    cls._schema.create_all(safe, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5071, in create_all
+    self.create_table(safe, **table_options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 4957, in create_table
+    self.database.execute(self._create_table(safe=safe, **options))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2721, in execute_sql
+    self.commit()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2662, in connect
+    self._initialize_connection(self._state.conn)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+peewee.OperationalError: unable to open database file
+2019-03-16 19:29:24,434 [MainThread  ] [ERROR]  unable to open database file
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2662, in connect
+    self._initialize_connection(self._state.conn)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+peewee.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/__init__.py", line 14, in init_models
+    db.database.create_tables(ms)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2871, in create_tables
+    model.create_table(**options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5846, in create_table
+    cls._schema.create_all(safe, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5071, in create_all
+    self.create_table(safe, **table_options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 4957, in create_table
+    self.database.execute(self._create_table(safe=safe, **options))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2721, in execute_sql
+    self.commit()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2662, in connect
+    self._initialize_connection(self._state.conn)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+peewee.OperationalError: unable to open database file
+2019-03-16 19:29:30,500 [MainThread  ] [ERROR]  unable to open database file
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+sqlite3.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2662, in connect
+    self._initialize_connection(self._state.conn)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+peewee.OperationalError: unable to open database file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/__init__.py", line 14, in init_models
+    db.database.create_tables(ms)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2871, in create_tables
+    model.create_table(**options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5846, in create_table
+    cls._schema.create_all(safe, **options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 5071, in create_all
+    self.create_table(safe, **table_options)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 4957, in create_table
+    self.database.execute(self._create_table(safe=safe, **options))
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2727, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2721, in execute_sql
+    self.commit()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2712, in execute_sql
+    cursor = self.cursor(commit)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2698, in cursor
+    self.connect()
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2662, in connect
+    self._initialize_connection(self._state.conn)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2512, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2661, in connect
+    self._state.set_connection(self._connect())
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj/venv/lib/python3.7/site-packages/peewee.py", line 2942, in _connect
+    **self.connect_params)
+peewee.OperationalError: unable to open database file
+2019-03-16 19:34:03,328 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 20:23:08,459 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-16 22:42:55,120 [MainThread  ] [WARNI]   * Debugger is active!
