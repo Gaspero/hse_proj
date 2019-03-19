@@ -59,15 +59,7 @@ class AddCustomer(Resource):
         parser = reqparse.RequestParser()
         args = self.reqparse.parse_args()
         #  with DB.atomic():
-        customer = Customer.create(
-            first_name=args["first_name"],
-            last_name=args["last_name"],
-            email=args["email"],
-            phone=args["phone"],
-            birth_day=args["birth_day"],
-            district=args["district"],
-            address=args["address"],
-            linked_card=args["linked_card"])
+        customer = Customer.create(**args)
         return {'isSuccess': True, 'customer_id': customer.customer_id}
 
 
@@ -108,16 +100,7 @@ class UpdateCustomer(Resource):
     def get(self, customer_id):
         parser = reqparse.RequestParser()
         args = self.reqparse.parse_args()
-        #  with DB.atomic():
-        query = Customer.update(
-            first_name=args["first_name"],
-            last_name=args["last_name"],
-            email=args["email"],
-            phone=args["phone"],
-            birth_day=args["birth_day"],
-            district=args["district"],
-            address=args["address"],
-            linked_card=args["linked_card"]).where(Customer.customer_id == customer_id)
+        query = Customer.update(**args).where(Customer.customer_id == customer_id)
         num = query.execute()
         return {'isSuccess': True, 'rowsUpdated': str(num)}
     # TODO: починить - не работает если не заполнены все поля

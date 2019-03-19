@@ -769,3 +769,31 @@ Traceback (most recent call last):
     email=args["email"],
     ^
 IndentationError: unexpected indent
+2019-03-19 18:42:15,461 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 00:49:54,424 [MainThread  ] [ERROR]  unexpected indent (customer.py, line 63)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 50, in <module>
+    from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/customer.py", line 63
+    """   first_name=args["first_name"],
+    ^
+IndentationError: unexpected indent
+2019-03-20 00:50:10,377 [MainThread  ] [ERROR]  unexpected indent (customer.py, line 63)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 50, in <module>
+    from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/customer.py", line 63
+    """   first_name=args["first_name"],
+    ^
+IndentationError: unexpected indent
+2019-03-20 00:50:32,861 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:20:36,194 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:22:25,679 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:22:55,740 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:33:56,282 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:37:10,325 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:42:25,148 [MainThread  ] [WARNI]   * Debugger is active!
