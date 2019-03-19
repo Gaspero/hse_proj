@@ -671,3 +671,101 @@ peewee.OperationalError: unable to open database file
 2019-03-19 17:31:10,722 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-19 17:31:43,835 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-19 17:38:50,457 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 17:52:50,670 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 17:54:01,787 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 17:57:00,238 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:16:28,115 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:17:11,723 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:18:25,856 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:24:52,141 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:25:50,917 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:29:02,408 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:29:42,928 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:30:14,242 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:34:49,692 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:36:07,948 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:38:05,824 [MainThread  ] [ERROR]  invalid syntax (customer.py, line 122)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 50, in <module>
+    from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/customer.py", line 122
+    """
+            email=args["email"],
+            phone=args["phone"],
+            birth_day=args["birth_day"],
+            district=args["district"],
+            address=args["address"],
+            linked_card=args["linked_card"])""".where(Customer.customer_id == customer_id)
+       
+                                
+                                
+                                        
+                                      
+                                    
+                                              ^
+SyntaxError: invalid syntax
+2019-03-19 18:38:15,866 [MainThread  ] [ERROR]  invalid syntax (customer.py, line 122)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 50, in <module>
+    from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/customer.py", line 122
+    """
+            email=args["email"],
+            phone=args["phone"],
+            birth_day=args["birth_day"],
+            district=args["district"],
+            address=args["address"],
+            linked_card=args["linked_card"])""".where(Customer.customer_id == customer_id)
+       
+                                
+                                
+                                        
+                                      
+                                    
+                                              ^
+SyntaxError: invalid syntax
+2019-03-19 18:38:27,084 [MainThread  ] [ERROR]  unexpected indent (customer.py, line 116)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 50, in <module>
+    from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/customer.py", line 116
+    """
+    ^
+IndentationError: unexpected indent
+2019-03-19 18:39:02,438 [MainThread  ] [ERROR]  unexpected indent (customer.py, line 116)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 50, in <module>
+    from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/customer.py", line 116
+    """
+    ^
+IndentationError: unexpected indent
+2019-03-19 18:39:10,369 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-19 18:40:22,217 [MainThread  ] [ERROR]  unexpected indent (customer.py, line 116)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 50, in <module>
+    from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/customer.py", line 116
+    email=args["email"],
+    ^
+IndentationError: unexpected indent
+2019-03-19 18:40:26,731 [MainThread  ] [ERROR]  unexpected indent (customer.py, line 116)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 50, in <module>
+    from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/customer.py", line 116
+    email=args["email"],
+    ^
+IndentationError: unexpected indent

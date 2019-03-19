@@ -38,7 +38,7 @@ class AddCustomer(Resource):
     def __init__(self):
         self.reqparse = reqparse.RequestParser()
         self.reqparse.add_argument('first_name', type=str, required=True,
-                                   help='Incorrect first_name', location='headers')
+                                   help='Incorrect first_name', location='json')
         self.reqparse.add_argument('last_name', type=str, required=True,
                                    help='Incorrect last_name', location='json')
         self.reqparse.add_argument('email', type=str, required=True,
@@ -57,19 +57,18 @@ class AddCustomer(Resource):
 
     def get(self):
         parser = reqparse.RequestParser()
-        args = parser.parse_args()
+        args = self.reqparse.parse_args()
         #  with DB.atomic():
         customer = Customer.create(
-            first_name=first_name,
-            last_name=last_name,
-            email=email,
-            phone=phone,
-            birth_day=birth_day,
-            district=district,
-            address=address,
-            linked_card=linked_card)
+            first_name=args["first_name"],
+            last_name=args["last_name"],
+            email=args["email"],
+            phone=args["phone"],
+            birth_day=args["birth_day"],
+            district=args["district"],
+            address=args["address"],
+            linked_card=args["linked_card"])
         return {'isSuccess': True, 'customer_id': customer.customer_id}
-    # TODO: исправить, не работает
 
 
 class DeleteCustomer(Resource):
@@ -88,13 +87,37 @@ class DeleteCustomer(Resource):
 class UpdateCustomer(Resource):
     def __init__(self):
         self.reqparse = reqparse.RequestParser()
-        self.reqparse.add_argument('customer_id', type=int, required=True,
-                                   help='Incorrect customer_id', location='json')
+        self.reqparse.add_argument('first_name', type=str, required=False,
+                                   help='Incorrect first_name', location='json')
+        self.reqparse.add_argument('last_name', type=str, required=False,
+                                   help='Incorrect last_name', location='json')
+        self.reqparse.add_argument('email', type=str, required=False,
+                                   help='Incorrect email', location='json')
+        self.reqparse.add_argument('phone', type=str, required=False,
+                                   help='Incorrect phone', location='json')
+        self.reqparse.add_argument('birth_day', required=False,
+                                   help='Incorrect birth_day', location='json')
+        self.reqparse.add_argument('district', type=str, required=False,
+                                   help='Incorrect district', location='json')
+        self.reqparse.add_argument('address', type=str, required=False,
+                                   help='Incorrect address', location='json')
+        self.reqparse.add_argument('linked_card', type=int, required=False,
+                                   help='Incorrect linked_card', location='json')
         super(UpdateCustomer, self).__init__()
 
     def get(self, customer_id):
-        query = Product.update(price=10).where(Product.product_id == product_id)
+        parser = reqparse.RequestParser()
+        args = self.reqparse.parse_args()
+        #  with DB.atomic():
+        query = Customer.update(
+            first_name=args["first_name"],
+            last_name=args["last_name"],
+            email=args["email"],
+            phone=args["phone"],
+            birth_day=args["birth_day"],
+            district=args["district"],
+            address=args["address"],
+            linked_card=args["linked_card"]).where(Customer.customer_id == customer_id)
         num = query.execute()
         return {'isSuccess': True, 'rowsUpdated': str(num)}
-    # TODO: починить
-
+    # TODO: починить - не работает если не заполнены все поля
