@@ -38,7 +38,7 @@ api = Api(APP)
 
 
 from services.product import GetProducts, AddProduct, DeleteProduct, UpdateProduct
-api.add_resource(GetProducts, '/product/get')
+api.add_resource(GetProducts, '/products/get')
 api.add_resource(AddProduct, '/product/add/<int:category_id>')
 api.add_resource(DeleteProduct, '/product/delete/<int:product_id>')
 api.add_resource(UpdateProduct, '/product/update/<int:product_id>')

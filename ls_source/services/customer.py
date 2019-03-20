@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import logging
 from playhouse.shortcuts import model_to_dict
 from flask_restful import Resource, reqparse
 
@@ -55,7 +56,7 @@ class AddCustomer(Resource):
                                    help='Incorrect linked_card', location='json')
         super(AddCustomer, self).__init__()
 
-    def get(self):
+    def post(self):
         parser = reqparse.RequestParser()
         args = self.reqparse.parse_args()
         #  with DB.atomic():
@@ -70,7 +71,7 @@ class DeleteCustomer(Resource):
                                    help='Incorrect customer_id', location='json')
         super(DeleteCustomer, self).__init__()
 
-    def get(self, customer_id):
+    def delete(self, customer_id):
         query = Customer.delete().where(Customer.customer_id == customer_id)
         num = query.execute()
         return {'isSuccess': True, 'rowsUpdated': str(num)}
@@ -97,10 +98,12 @@ class UpdateCustomer(Resource):
                                    help='Incorrect linked_card', location='json')
         super(UpdateCustomer, self).__init__()
 
-    def get(self, customer_id):
+    def put(self, customer_id):
         parser = reqparse.RequestParser()
         args = self.reqparse.parse_args()
+        filtered_args = {k: v for k, v in args.items() if v is not None}
+        args.clear()
+        args.update(filtered_args)
         query = Customer.update(**args).where(Customer.customer_id == customer_id)
         num = query.execute()
         return {'isSuccess': True, 'rowsUpdated': str(num)}
-    # TODO: починить - не работает если не заполнены все поля

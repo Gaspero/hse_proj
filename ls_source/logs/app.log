@@ -797,3 +797,91 @@ IndentationError: unexpected indent
 2019-03-20 01:33:56,282 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-20 01:37:10,325 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-20 01:42:25,148 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:48:32,486 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:48:49,237 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:50:25,599 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:51:24,036 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:52:08,210 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:52:32,038 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:53:38,640 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 01:53:47,812 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 11:26:07,608 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 11:33:37,107 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 11:34:20,429 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 11:44:54,494 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 11:46:26,884 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 11:46:45,611 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 11:57:26,325 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 11:58:22,783 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:04:56,855 [MainThread  ] [ERROR]  invalid syntax (product.py, line 35)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 40, in <module>
+    from services.product import GetProducts, AddProduct, DeleteProduct, UpdateProduct
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/product.py", line 35
+    def post(self, category_id):
+      ^
+SyntaxError: invalid syntax
+2019-03-20 12:06:49,103 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:07:23,122 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:11:34,078 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:11:50,831 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:15:45,636 [MainThread  ] [ERROR]  keyword can't be an expression (product.py, line 58)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 40, in <module>
+    from services.product import GetProducts, AddProduct, DeleteProduct, UpdateProduct
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/product.py", line 58
+    query = Product.update(**args).where(Product.product_id = product_id)
+                                        ^
+SyntaxError: keyword can't be an expression
+2019-03-20 12:16:57,890 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:20:14,400 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:21:44,895 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:21:51,503 [Thread-2    ] [CRITI]  1
+2019-03-20 12:21:51,506 [Thread-2    ] [CRITI]  <peewee.ModelUpdate object at 0x106483320>
+2019-03-20 12:26:59,350 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:27:05,277 [Thread-2    ] [CRITI]  1
+2019-03-20 12:27:05,280 [Thread-2    ] [CRITI]  None
+2019-03-20 12:27:22,175 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:32:55,793 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:32:58,054 [Thread-2    ] [CRITI]  1
+2019-03-20 12:34:05,629 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:34:06,825 [Thread-2    ] [CRITI]  1
+2019-03-20 12:34:06,826 [Thread-2    ] [CRITI]  {}
+2019-03-20 12:35:02,144 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:35:04,526 [Thread-2    ] [CRITI]  1
+2019-03-20 12:35:04,527 [Thread-2    ] [CRITI]  {'price': 199.0}
+2019-03-20 12:35:04,527 [Thread-2    ] [CRITI]  <peewee.ModelUpdate object at 0x10c8bb470>
+2019-03-20 12:36:00,283 [Thread-7    ] [CRITI]  1
+2019-03-20 12:36:00,284 [Thread-7    ] [CRITI]  {'price': 199.0}
+2019-03-20 12:36:00,284 [Thread-7    ] [CRITI]  <peewee.ModelUpdate object at 0x10c8bb7b8>
+2019-03-20 12:36:23,987 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:36:53,931 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:37:13,399 [Thread-2    ] [CRITI]  1
+2019-03-20 12:37:13,400 [Thread-2    ] [CRITI]  {'price': 200.0}
+2019-03-20 12:37:13,400 [Thread-2    ] [CRITI]  <peewee.ModelUpdate object at 0x10b740438>
+2019-03-20 12:38:30,036 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:40:30,170 [Thread-4    ] [CRITI]  {'first_name': 'Новый-Старый', 'last_name': 'Клиент', 'email': None, 'phone': None, 'birth_day': None, 'district': None, 'address': None, 'linked_card': None}
+2019-03-20 12:43:13,929 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:43:17,320 [Thread-2    ] [CRITI]  {'first_name': 'Новый-Старый', 'last_name': 'Клиент', 'email': None, 'phone': None, 'birth_day': None, 'district': None, 'address': None, 'linked_card': None}
+2019-03-20 12:43:40,217 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:43:40,692 [Thread-2    ] [CRITI]  {'first_name': 'Новый-Старый', 'last_name': 'Клиент', 'email': None, 'phone': None, 'birth_day': None, 'district': None, 'address': None, 'linked_card': None}
+2019-03-20 12:43:49,019 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:46:38,788 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:46:45,903 [Thread-2    ] [CRITI]  {}
+2019-03-20 12:47:36,324 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:47:39,050 [Thread-2    ] [CRITI]  {'first_name': 'Новый-Старый', 'last_name': 'Клиент', 'email': None, 'phone': None, 'birth_day': None, 'district': None, 'address': None, 'linked_card': None}
+2019-03-20 12:49:28,165 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:49:30,877 [Thread-2    ] [CRITI]  {'first_name': 'Новый-Старый', 'last_name': 'Клиент', 'email': None, 'phone': None, 'birth_day': None, 'district': None, 'address': None, 'linked_card': None}
+2019-03-20 12:51:18,734 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:52:37,979 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:52:50,605 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:53:02,471 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:53:04,435 [Thread-2    ] [CRITI]  {'first_name': 'Новый-Старый', 'last_name': 'Клиент'}
+2019-03-20 12:53:34,689 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:53:58,791 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:54:05,513 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 12:54:50,722 [MainThread  ] [WARNI]   * Debugger is active!
