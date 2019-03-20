@@ -987,3 +987,20 @@ SyntaxError: invalid syntax
 2019-03-20 17:34:59,836 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-20 17:45:12,999 [Thread-2    ] [CRITI]  None
 2019-03-20 17:45:13,000 [Thread-2    ] [CRITI]  None
+2019-03-20 19:03:46,775 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:03:53,000 [Thread-2    ] [CRITI]  1
+2019-03-20 19:03:53,003 [Thread-2    ] [CRITI]  2
+2019-03-20 19:04:36,252 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:09:14,808 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:12:57,731 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:13:32,171 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:15:03,323 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:16:57,111 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:18:10,904 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:18:57,598 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:38:32,480 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:39:30,127 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:40:35,751 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:44:28,169 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:44:45,941 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 19:47:18,592 [MainThread  ] [WARNI]   * Debugger is active!

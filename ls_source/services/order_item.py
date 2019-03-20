@@ -3,6 +3,7 @@
 import logging
 from playhouse.shortcuts import model_to_dict
 from flask_restful import Resource, reqparse
+from flask import jsonify
 
 from application import DB
 from models.order import Order, OrderItem
@@ -11,21 +12,12 @@ from models.order import Order, OrderItem
 class GetOrderItems(Resource):
     def get(self, order_id):
         result = OrderItem.select().where(OrderItem.order_id == order_id)
-        for i in result:
-            logging.critical(print(i))
-        order_items = model_to_dict(result)
+        order_items = []
+        for order_item in result:
+            row = model_to_dict(order_item, exclude=[OrderItem.order_id, OrderItem.product_id.create_time])
+            order_items.append(row)
         return {'result': order_items}
-    # TODO: фикс неадекватного ответа modelselect' object has no attribute '_meta'
-"""
-class GetOrderItems(Resource):
-    def get(self, order_id):
-        result = Order.item.select().where(Order.order_id == order_id)
-        for i in result:
-            logging.critical(print(i))
-        order_items = model_to_dict(result)
-        return {'result': order_items}
-    # TODO: фикс неадекватного ответа, когда заказ пуст
-"""
+    # TODO: что будет, когда пусто?
 
 
 class AddOrderItem(Resource):
