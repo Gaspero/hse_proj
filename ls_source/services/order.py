@@ -29,12 +29,15 @@ class AddOrder(Resource):
                                    help='Incorrect customer_id', location='json')
         self.reqparse.add_argument('order_status', type=str, required=True,
                                    help='Incorrect order_status', location='json')
-        self.reqparse.add_argument('producer_id', type=int, required=True,
+        self.reqparse.add_argument('producer_id', type=int, required=False,
                                    help='Incorrect producer_id', location='json')
         super(AddOrder, self).__init__()
 
     def post(self):
         args = self.reqparse.parse_args()
+        filtered_args = {k: v for k, v in args.items() if v is not None}
+        args.clear()
+        args.update(filtered_args)
         # with DB.atomic():
         order = Order.create(**args)
         return {'isSuccess': True, 'product_id': order.order_id}

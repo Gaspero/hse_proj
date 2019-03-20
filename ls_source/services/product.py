@@ -26,17 +26,22 @@ class AddProduct(Resource):
         self.reqparse.add_argument('name', type=str, required=True,
                                    help='Incorrect name', location='json')
         self.reqparse.add_argument('price', type=float, required=True,
-                                   help='Incorrect last_name', location='json')
+                                   help='Incorrect price', location='json')
         self.reqparse.add_argument('description', type=str, required=True,
                                    help='Incorrect description', location='json')
         self.reqparse.add_argument('size', type=str, required=True,
                                    help='Incorrect size', location='json')
+        self.reqparse.add_argument('category_id', type=int, required=False,
+                                   help='Incorrect category_id', location='json')
         super(AddProduct, self).__init__()
 
-    def post(self, category_id):
+    def post(self):
         args = self.reqparse.parse_args()
         # with DB.atomic():
-        product = Product.create(**args, category_id=category_id)
+        filtered_args = {k: v for k, v in args.items() if v is not None}
+        args.clear()
+        args.update(filtered_args)
+        product = Product.create(**args)
         return {'isSuccess': True, 'product_id': product.product_id}
 
 

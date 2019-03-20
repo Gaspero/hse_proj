@@ -39,7 +39,7 @@ api = Api(APP)
 
 from services.product import GetProducts, AddProduct, DeleteProduct, UpdateProduct
 api.add_resource(GetProducts, '/products/get')
-api.add_resource(AddProduct, '/product/add/<int:category_id>')
+api.add_resource(AddProduct, '/product/add')
 api.add_resource(DeleteProduct, '/product/delete/<int:product_id>')
 api.add_resource(UpdateProduct, '/product/update/<int:product_id>')
 
@@ -60,3 +60,9 @@ api.add_resource(GetOrders, '/orders/get')
 api.add_resource(AddOrder, '/order/add')
 api.add_resource(DeleteOrder, '/order/delete/<int:order_id>')
 api.add_resource(UpdateOrder, '/order/update/<int:order_id>')
+
+from services.order_item import GetOrderItems, AddOrderItem, DeleteOrderItem, UpdateOrderItem
+api.add_resource(GetOrderItems, '/order/<int:order_id>/items/get')
+api.add_resource(AddOrderItem, '/order/<int:order_id>/items/add')
+api.add_resource(DeleteOrderItem, '/order/<int:order_id>/items/<int:item_id>/delete')
+api.add_resource(UpdateOrderItem, '/order/<int:order_id>/items/<int:item_id>/update')

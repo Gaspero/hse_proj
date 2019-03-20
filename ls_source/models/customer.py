@@ -9,15 +9,15 @@ from application import DB
 class Customer(DB.Model):
 
     customer_id = PrimaryKeyField()
-    first_name = CharField(50, null=False)
-    last_name = CharField(50, null=False)
-    email = CharField(unique=True, null=False)
-    phone = CharField(21, unique=True, null=False)
+    first_name = CharField(50, null=True)
+    last_name = CharField(50, null=True)
+    email = CharField(unique=True, null=True)
+    phone = CharField(21, unique=True, null=True)
     birth_day = DateField(null=True)
     create_time = DateTimeField(default=datetime.now, null=False)
     is_active = BooleanField(default=True)
-    district = CharField(50, null=False)
-    address = CharField(50, null=False)
+    district = CharField(50, null=True)
+    address = CharField(50, null=True)
     linked_card = IntegerField(16)
 
     class Meta:
