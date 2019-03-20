@@ -885,3 +885,36 @@ SyntaxError: keyword can't be an expression
 2019-03-20 12:53:58,791 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-20 12:54:05,513 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-20 12:54:50,722 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:03:39,603 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:06:51,944 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:06:59,556 [MainThread  ] [ERROR]  invalid syntax (categories.py, line 35)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 46, in <module>
+    from services.categories import AddCategory, GetCategories
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/categories.py", line 35
+    def del(self, category_id):
+          ^
+SyntaxError: invalid syntax
+2019-03-20 13:07:29,065 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:08:31,602 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:09:41,218 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:10:53,572 [Thread-3    ] [ERROR]  127.0.0.1 - - [20/Mar/2019 13:10:53] code 400, message Bad request syntax ('POST /categories/add/\x1f8FF0 HTTP/1.1')
+2019-03-20 13:11:12,803 [Thread-4    ] [ERROR]  127.0.0.1 - - [20/Mar/2019 13:11:12] code 400, message Bad request syntax ('POST /category/add/\x1f8FF0 HTTP/1.1')
+2019-03-20 13:11:58,217 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:13:02,889 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:14:03,837 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:14:17,504 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:14:47,758 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:18:43,850 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:21:33,688 [MainThread  ] [ERROR]  invalid syntax (categories.py, line 48)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 46, in <module>
+    from services.categories import AddCategory, GetCategories, DeleteCategory
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/categories.py", line 48
+    TODO: добавить update
+                        ^
+SyntaxError: invalid syntax

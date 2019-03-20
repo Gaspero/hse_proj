@@ -43,9 +43,10 @@ api.add_resource(AddProduct, '/product/add/<int:category_id>')
 api.add_resource(DeleteProduct, '/product/delete/<int:product_id>')
 api.add_resource(UpdateProduct, '/product/update/<int:product_id>')
 
-from services.categories import AddCategory, GetCategories
-api.add_resource(AddCategory, '/category/add/<string:category_name>')
-api.add_resource(GetCategories, '/category/get')
+from services.categories import AddCategory, GetCategories, DeleteCategory
+api.add_resource(AddCategory, '/category/add')
+api.add_resource(GetCategories, '/categories/get')
+api.add_resource(DeleteCategory, '/category/delete/<int:category_id>')
 
 from services.customer import GetCustomer, GetCustomers, AddCustomer, DeleteCustomer, UpdateCustomer
 api.add_resource(GetCustomer, '/customer/get/<int:customer_id>')
