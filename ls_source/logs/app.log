@@ -918,3 +918,31 @@ Traceback (most recent call last):
     TODO: добавить update
                         ^
 SyntaxError: invalid syntax
+2019-03-20 13:23:26,219 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:36:33,801 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:38:35,959 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:42:01,669 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:47:07,066 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:47:59,458 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:48:02,070 [Thread-2    ] [WARNI]  <peewee.ModelSelect object at 0x10ddb7e10>
+2019-03-20 13:48:54,085 [Thread-3    ] [WARNI]  <peewee.ModelSelect object at 0x10e00dda0>
+2019-03-20 13:57:12,499 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:57:41,676 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:57:47,771 [Thread-2    ] [WARNI]  1
+2019-03-20 13:58:54,783 [MainThread  ] [ERROR]  invalid syntax (order.py, line 18)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 58, in <module>
+    from services.order import GetOrders, AddOrder, DeleteOrder, UpdateOrder
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/order.py", line 18
+    row = model_to_dict(order, exclude=[Order.create_time, Order.customer_id.])
+                                                                             ^
+SyntaxError: invalid syntax
+2019-03-20 13:59:10,811 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:59:45,956 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 13:59:48,552 [Thread-2    ] [WARNI]  1
+2019-03-20 14:01:00,026 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 14:01:08,862 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 14:03:59,815 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 14:10:54,313 [MainThread  ] [WARNI]   * Debugger is active!

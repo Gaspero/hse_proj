@@ -54,3 +54,9 @@ api.add_resource(GetCustomers, '/customers/get')
 api.add_resource(AddCustomer, '/customer/add')
 api.add_resource(DeleteCustomer, '/customer/delete/<int:customer_id>')
 api.add_resource(UpdateCustomer, '/customer/update/<int:customer_id>')
+
+from services.order import GetOrders, AddOrder, DeleteOrder, UpdateOrder
+api.add_resource(GetOrders, '/orders/get')
+api.add_resource(AddOrder, '/order/add')
+api.add_resource(DeleteOrder, '/order/delete/<int:order_id>')
+api.add_resource(UpdateOrder, '/order/update/<int:order_id>')
