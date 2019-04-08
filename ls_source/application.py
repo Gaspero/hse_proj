@@ -55,11 +55,12 @@ api.add_resource(AddCustomer, '/customer/add')
 api.add_resource(DeleteCustomer, '/customer/delete/<int:customer_id>')
 api.add_resource(UpdateCustomer, '/customer/update/<int:customer_id>')
 
-from services.order import GetOrders, AddOrder, DeleteOrder, UpdateOrder
+from services.order import GetOrders, AddOrder, DeleteOrder, UpdateOrder, TestOrder
 api.add_resource(GetOrders, '/orders/get')
 api.add_resource(AddOrder, '/order/add')
 api.add_resource(DeleteOrder, '/order/delete/<int:order_id>')
 api.add_resource(UpdateOrder, '/order/update/<int:order_id>')
+api.add_resource(TestOrder, '/order/test/<int:order_id>')
 
 from services.order_item import GetOrderItems, AddOrderItem, DeleteOrderItem, UpdateOrderItem
 api.add_resource(GetOrderItems, '/order/<int:order_id>/items/get')

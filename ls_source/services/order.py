@@ -7,6 +7,18 @@ from flask_restful import Resource, reqparse
 from application import DB
 from models.order import Order
 
+class TestOrder(Resource):
+    def __init__(self):
+        self.reqparse = reqparse.RequestParser()
+        super(TestOrder, self).__init__()
+
+    def get(self, order_id):
+        result = Order.get_by_id(order_id).find_producers()
+        if result:
+            return {'result': model_to_dict(result.first())}  # TODO: issue - if none and we return string, throws an error
+        else:
+            return {'result': 'Nothing found'}
+
 
 class GetOrders(Resource):
     def get(self):

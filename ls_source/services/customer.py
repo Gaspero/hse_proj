@@ -22,6 +22,7 @@ class GetCustomer(Resource):
             customer['birth_day'] = result.birth_day.strftime('%Y-%m-%d %H:%M:%S')
             return {'result': customer}
 
+
 class GetCustomers(Resource):
 
     def get(self):

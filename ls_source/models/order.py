@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+import logging
+
 from datetime import datetime
 from peewee import *
 
@@ -24,10 +26,24 @@ class Order(DB.Model):
     customer_id = ForeignKeyField(Customer, to_field='customer_id', null=False)
     order_status = CharField(default="Pre-Order", null=False)
     create_time = DateTimeField(default=datetime.now, null=False)
+    district = CharField(50, null=True)
     producer_id = ForeignKeyField(Producer, to_field='producer_id', null=True)  # TODO: сделать присвоение на опр. этапе
 
     class Meta:
         table_name = 'orders'
+
+    # @classmethod
+    def find_producers(self):
+        # logging.warning(cls.customer_id.district)
+        query = Producer.select().where(Producer.district == self.district)  # Вручную тут вылезает ошибка
+        # query = Producer.select().where(Producer.district == "Выборгский")
+        # logging.warning(query)
+        return query if query else None  # else 'No producers available'
+
+    # @classmethod
+    def test(self):
+        # query = Order.select().where(Order.district == cls.district)
+        logging.warning(self.district)
 
 
 class OrderItem(DB.Model):

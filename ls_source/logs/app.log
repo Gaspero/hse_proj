@@ -1004,3 +1004,62 @@ SyntaxError: invalid syntax
 2019-03-20 19:44:28,169 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-20 19:44:45,941 [MainThread  ] [WARNI]   * Debugger is active!
 2019-03-20 19:47:18,592 [MainThread  ] [WARNI]   * Debugger is active!
+2019-03-20 22:46:35,297 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:08:03,881 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:10:15,019 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:16:12,274 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:16:37,409 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:18:35,131 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:35:24,326 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:40:18,263 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:52:13,635 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:55:21,735 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 17:55:43,920 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:03:09,715 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:05:11,740 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:05:39,786 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:08:21,922 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:10:50,440 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:16:09,632 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:32:27,738 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:40:37,085 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:40:41,706 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 18:41:34,467 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 21:56:54,861 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 21:59:29,059 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:01:18,791 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:02:40,118 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:03:15,607 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:05:50,083 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:06:11,935 [MainThread  ] [ERROR]  invalid syntax (order.py, line 38)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/order.py", line 38
+    query = Producer.select().where(Producer.district == cls..district)  # Вручную тут вылезает ошибка
+                                                             ^
+SyntaxError: invalid syntax
+2019-04-08 22:06:18,298 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:10:51,041 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:11:45,512 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:12:15,817 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:19:39,752 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:21:22,405 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:21:42,486 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:24:48,521 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:59:26,990 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 22:59:47,142 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:06:11,491 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:09:30,293 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:11:40,036 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:16:17,750 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:18:41,129 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:21:49,070 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:21:54,569 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:23:12,204 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:25:23,284 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-08 23:28:30,611 [MainThread  ] [WARNI]   * Debugger is active!
