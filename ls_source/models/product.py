@@ -15,7 +15,11 @@ class Product(DB.Model):
     create_time = DateTimeField(default=datetime.now, null=False)
     description = CharField(null=False)
     size = CharField()
-
+    weight = FloatField()
+    energy = FloatField()
+    proteins = FloatField()
+    fat = FloatField()
+    carbons = FloatField()
     category_id = ForeignKeyField(Category, to_field='category_id', null=True)
 
     class Meta:
@@ -29,3 +33,12 @@ class ProductAdditional(DB.Model):
     product_additional_id = PrimaryKeyField()
     name = CharField(unique=True, null=False)
     price = FloatField(default=0)
+
+
+class ProductIngredient(DB.Model):
+    ingredient_id = PrimaryKeyField()
+    product_id = ForeignKeyField(Product, backref='ingredients')
+    quantity = IntegerField(default=0, null=False)
+
+    class Meta:
+        table_name = 'product ingredients'
