@@ -24,7 +24,7 @@ def init_admin(app, db):
 
     from models.customer import Customer
     from models.order import Order, OrderItem
-    from models.product import Product, ProductAdditional
+    from models.product import Product, ProductAdditional, ProductIngredient
     from models.producers import Producer
     from models.category import Category
 
@@ -34,6 +34,7 @@ def init_admin(app, db):
     admin.register(Product)
     admin.register(Producer)
     admin.register(Category)
+    admin.register(ProductIngredient)
     admin.setup()
 
     return admin

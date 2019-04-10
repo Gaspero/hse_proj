@@ -14,12 +14,12 @@ class Product(DB.Model):
     # available_quantity = IntegerField(default=0, null=False)
     create_time = DateTimeField(default=datetime.now, null=False)
     description = CharField(null=False)
-    size = CharField()
-    weight = FloatField()
-    energy = FloatField()
-    proteins = FloatField()
-    fat = FloatField()
-    carbons = FloatField()
+    size = CharField(null=True)
+    weight = FloatField(null=True)
+    energy = FloatField(null=True)
+    proteins = FloatField(null=True)
+    fat = FloatField(null=True)
+    carbons = FloatField(null=True)
     category_id = ForeignKeyField(Category, to_field='category_id', null=True)
 
     class Meta:
