@@ -9,7 +9,6 @@ from application import DB
 from models.customer import Customer
 from models.product import Product, ProductAdditional
 from models.producers import Producer
-# from logics.some import matcher
 
 """
 STATUSES = ((1, 'Pre-Order'),
@@ -32,18 +31,9 @@ class Order(DB.Model):
     class Meta:
         table_name = 'orders'
 
-    # @classmethod
     def find_producers(self):
-        # logging.warning(cls.customer_id.district)
-        query = Producer.select().where(Producer.district == self.district)  # Вручную тут вылезает ошибка
-        # query = Producer.select().where(Producer.district == "Выборгский")
-        # logging.warning(query)
+        query = Producer.select().where(Producer.district == self.district)
         return query if query else None  # else 'No producers available'
-
-    # @classmethod
-    def test(self):
-        # query = Order.select().where(Order.district == cls.district)
-        logging.warning(self.district)
 
 
 class OrderItem(DB.Model):
