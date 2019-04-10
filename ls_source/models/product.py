@@ -38,7 +38,7 @@ class ProductAdditional(DB.Model):
 class ProductIngredient(DB.Model):
     ingredient_id = PrimaryKeyField()
     product_id = ForeignKeyField(Product, backref='ingredients')
-    quantity = IntegerField(default=0, null=False)
+    name = CharField(null=False)
 
     class Meta:
         table_name = 'product ingredients'
