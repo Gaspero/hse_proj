@@ -1071,3 +1071,155 @@ SyntaxError: invalid syntax
 2019-04-10 21:49:35,967 [MainThread  ] [WARNI]   * Debugger is active!
 2019-04-10 21:51:59,306 [MainThread  ] [WARNI]   * Debugger is active!
 2019-04-10 21:53:12,250 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-10 21:58:23,224 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 19:04:38,189 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 19:07:21,786 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 19:12:19,819 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 19:15:27,074 [MainThread  ] [ERROR]  cannot import name 'DB' from 'application' (/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 8, in <module>
+    from services.pw_api import init_api
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 6, in <module>
+    from models.category import Category
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/category.py", line 5, in <module>
+    from application import DB
+ImportError: cannot import name 'DB' from 'application' (/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py)
+2019-04-11 19:15:59,310 [MainThread  ] [ERROR]  cannot import name 'DB' from 'application' (/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 8, in <module>
+    from services.pw_api import init_api
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 6, in <module>
+    from models.category import Category
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/category.py", line 5, in <module>
+    from application import DB
+ImportError: cannot import name 'DB' from 'application' (/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py)
+2019-04-11 19:16:39,337 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 19:17:03,468 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 19:17:05,983 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 19:18:12,971 [MainThread  ] [ERROR]  'ingredients'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 26, in <module>
+    init_api(API)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 19, in init_api
+    api.register(Product, ProductResource)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 501, in register
+    self._registry[model] = provider(self, model, auth or self.default_auth, allowed_methods)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 162, in __init__
+    field_obj = self.model._meta.fields[field_name]
+KeyError: 'ingredients'
+2019-04-11 19:18:39,609 [MainThread  ] [ERROR]  'ingredientz'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 26, in <module>
+    init_api(API)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 19, in init_api
+    api.register(Product, ProductResource)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 501, in register
+    self._registry[model] = provider(self, model, auth or self.default_auth, allowed_methods)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 162, in __init__
+    field_obj = self.model._meta.fields[field_name]
+KeyError: 'ingredientz'
+2019-04-11 19:19:18,674 [MainThread  ] [ERROR]  'product ingredients'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 26, in <module>
+    init_api(API)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 19, in init_api
+    api.register(Product, ProductResource)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 501, in register
+    self._registry[model] = provider(self, model, auth or self.default_auth, allowed_methods)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 162, in __init__
+    field_obj = self.model._meta.fields[field_name]
+KeyError: 'product ingredients'
+2019-04-11 19:27:51,840 [MainThread  ] [ERROR]  'product'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 26, in <module>
+    init_api(API)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 20, in init_api
+    api.register(ProductIngredient, ProductResource)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 501, in register
+    self._registry[model] = provider(self, model, auth or self.default_auth, allowed_methods)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 162, in __init__
+    field_obj = self.model._meta.fields[field_name]
+KeyError: 'product'
+2019-04-11 19:28:22,128 [MainThread  ] [ERROR]  'ingredient'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 26, in <module>
+    init_api(API)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 20, in init_api
+    api.register(ProductIngredient, ProductResource)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 501, in register
+    self._registry[model] = provider(self, model, auth or self.default_auth, allowed_methods)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 162, in __init__
+    field_obj = self.model._meta.fields[field_name]
+KeyError: 'ingredient'
+2019-04-11 19:28:39,592 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 19:28:57,550 [MainThread  ] [ERROR]  type object 'ProductResource' has no attribute '_meta'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 26, in <module>
+    init_api(API)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 21, in init_api
+    api.register(ProductResource)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 501, in register
+    self._registry[model] = provider(self, model, auth or self.default_auth, allowed_methods)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 143, in __init__
+    self.pk = model._meta.primary_key
+AttributeError: type object 'ProductResource' has no attribute '_meta'
+2019-04-11 19:29:57,410 [MainThread  ] [ERROR]  'ingredient'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 26, in <module>
+    init_api(API)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 20, in init_api
+    api.register(ProductIngredient, ProductResource)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 501, in register
+    self._registry[model] = provider(self, model, auth or self.default_auth, allowed_methods)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 162, in __init__
+    field_obj = self.model._meta.fields[field_name]
+KeyError: 'ingredient'
+2019-04-11 19:31:12,606 [MainThread  ] [ERROR]  'ingredient'
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 26, in <module>
+    init_api(API)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/pw_api.py", line 19, in init_api
+    api.register(Product, ProductResource)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 501, in register
+    self._registry[model] = provider(self, model, auth or self.default_auth, allowed_methods)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/venv/lib/python3.7/site-packages/flask_peewee/rest.py", line 162, in __init__
+    field_obj = self.model._meta.fields[field_name]
+KeyError: 'ingredient'
+2019-04-11 19:55:13,103 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 22:10:06,879 [MainThread  ] [ERROR]  invalid syntax (order.py, line 83)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 58, in <module>
+    from services.order import GetOrders, AddOrder, DeleteOrder, UpdateOrder, TestOrder
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/services/order.py", line 83
+    order =
+          ^
+SyntaxError: invalid syntax
+2019-04-11 22:10:31,676 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 22:32:57,940 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 22:37:25,629 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 22:43:50,532 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 22:46:08,101 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 22:48:49,080 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-11 22:50:17,522 [MainThread  ] [WARNI]   * Debugger is active!

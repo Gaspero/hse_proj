@@ -7,6 +7,7 @@ from flask_restful import Resource, reqparse
 from application import DB
 from models.order import Order
 
+
 class TestOrder(Resource):
     def __init__(self):
         self.reqparse = reqparse.RequestParser()
@@ -80,7 +81,21 @@ class UpdateOrder(Resource):
         filtered_args = {k: v for k, v in args.items() if v is not None}
         args.clear()
         args.update(filtered_args)
-        query = Order.update(**args).where(Order.order_id == order_id)
-        num = query.execute()
-        return {'isSuccess': True, 'rowsUpdated': str(num)}
+        if hasattr(args, 'order_status'):
+            order = Order.get_by_id(order_id)
+            district = order.find_producers()
+            if args.order_status == "Payment" and district:
+                query = Order.update(producer_id=district.first(), **args).where(Order.order_id == order_id)
+                num = query.execute()
+                return {'isSuccess': True, 'rowsUpdated': str(num)}
+            else:
+                return {'isSuccess': False, 'message': 'No producers available'}
+        else:
+            query = Order.update(**args).where(Order.order_id == order_id)
+            num = query.execute()
+            return {'isSuccess': True, 'rowsUpdated': str(num)}
+
+    # TODO: возможно, слишком много запросов к БД
+    # TODO: сделать обработку других статусов
+    # TODO: какое ожидаемое поведение, когда района нет? сделать обработчик
     # TODO: не обрабатывает ошибку, когда данный id не найден
