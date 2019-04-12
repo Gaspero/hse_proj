@@ -2,7 +2,6 @@
 Feature: Auto-assigning producer based on order's district
 
   Scenario: There is valid producer for this district
-    # Enter steps here
     Given a set of producers
       | name      | district    | address    | workers  | working_hours  |
       | Place1    | Vyborgskiy  | Severniy   | 1        | 10-21          |
@@ -12,9 +11,19 @@ Feature: Auto-assigning producer based on order's district
       | customer_id   | order_status | district    |
       | Test User     | Pre-order    | Vyborgskiy  |
     When I confirm order
-    Then System updates district of the order to Vyborgskiy
-#  Scenario: There are more than one valid producers for this district
+    Then System sets producer for given order to Place1
+    And Order status is Payment
 
+  Scenario: There are no valid producers for this district
+    Given a set of producers
+      | name   | district   | address | workers | working_hours |
+      | Place2 | Primorskiy | Kultury | 2       | 10-23         |
+      | Place3 | Centralniy | Moyki   | 3       | 10-22         |
+      | Place4 | Kurortniy  | Vokzal  | 1       | 10-21         |
+    And  an order
+      | customer_id | order_status | district   |
+      | Test User   | Pre-order    | Vyborgskiy |
+    Then Producer for given order is not provided
+    And Order status is Pre-order
 
-
-#  Scenario: There are no valid producers for this district
+#   Scenario: There are more than one valid producers for this district

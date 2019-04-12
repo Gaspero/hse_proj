@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import requests
-import logging
 from models.customer import Customer
 from models.producers import Producer
 from models.order import Order
@@ -35,15 +34,31 @@ def step_2(context):
 @when('I confirm order')
 def step_3(context):
     try:
+        # Делаем запрос к API для изменения статуса ордера
         context.request = requests.put(f'http://127.0.0.1:5001/order/update/{str(context.order_id)}',
                                        json={"order_status": "Payment"},
                                        headers={'Content-Type': 'application/json'})
     except:
         context.request = False
+    # Проверяем наличие ответа от сервера
     assert context.request.json()['isSuccess']
 
 
-@then('System updates district of the order to {district}')
-def step_4(context, district):
+@then('System sets producer for given order to {name}')
+def step_4(context, name):
     order = Order.get(Order.order_id == context.order_id)
-    assert order.district == district
+    producer = Producer.get(Producer.name == name)
+    assert order.producer_id == producer
+
+
+@then('Producer for given order is not provided')
+def step_5(context):
+    order = Order.get(Order.order_id == context.order_id)
+    # assert hasattr(order, 'producer_id') is False
+    assert order.producer_id is None
+
+
+@then('Order status is {status}')
+def step_6(context, status):
+    order = Order.get(Order.order_id == context.order_id)
+    assert order.order_status == status
