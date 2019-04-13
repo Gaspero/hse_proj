@@ -31,6 +31,7 @@ class Order(DB.Model):
     class Meta:
         table_name = 'orders'
 
+    # метод для получения продюсеров, подходящих заказу по району
     def find_producers(self):
         query = Producer.select().where(Producer.district == self.district)
         return query if query else None  # else 'No producers available'
