@@ -28,6 +28,14 @@ class Product(DB.Model):
     def __str__(self):
         return self.name
 
+    @classmethod
+    def sort_by_price(cls, direction):
+        if direction == 'asc' or direction is None:
+            result = cls.select().order_by(cls.price.asc())
+        if direction == 'desc':
+            result = cls.select().order_by(cls.price.desc())
+        return result
+
 
 class ProductAdditional(DB.Model):
     product_additional_id = PrimaryKeyField()
@@ -41,6 +49,7 @@ class ProductIngredient(DB.Model):
     name = CharField(null=False)
 
     # метод для фильтрации продуктов по ингредиентам, принимает список или список из одного элемента
+    # TODO: добавить игредиенты как ForeignKeyField в Product, перенести filter_products туда
     @classmethod
     def filter_products(cls, product_list):
         result = ProductIngredient.select().where(cls.name.in_(product_list))
