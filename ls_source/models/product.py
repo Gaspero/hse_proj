@@ -40,5 +40,11 @@ class ProductIngredient(DB.Model):
     product_id = ForeignKeyField(Product, backref='ingredients')
     name = CharField(null=False)
 
+    # метод для фильтрации продуктов по ингредиентам, принимает список или список из одного элемента
+    @classmethod
+    def filter_products(cls, product_list):
+        result = ProductIngredient.select().where(cls.name.in_(product_list))
+        return result
+
     class Meta:
         table_name = 'product ingredients'

@@ -1225,3 +1225,19 @@ SyntaxError: invalid syntax
 2019-04-11 22:50:17,522 [MainThread  ] [WARNI]   * Debugger is active!
 2019-04-12 01:49:16,594 [MainThread  ] [WARNI]   * Debugger is active!
 2019-04-12 21:50:58,530 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-14 00:40:43,933 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-14 00:43:26,733 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-14 00:46:01,183 [MainThread  ] [ERROR]  invalid syntax (product.py, line 46)
+Traceback (most recent call last):
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/run.py", line 40, in <module>
+    from application import APP
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/__init__.py", line 8, in init_models
+    from models.order import Order, OrderItem
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/order.py", line 10, in <module>
+    from models.product import Product, ProductAdditional
+  File "/Users/ivanshadrin/PycharmProjects/hse_proj3/ls_source/models/product.py", line 46
+    result = ProductIngredient.select().where([(cls.name == product)& for product in product_list])
+                                                                        ^
+SyntaxError: invalid syntax
