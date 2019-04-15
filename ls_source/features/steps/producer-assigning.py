@@ -51,6 +51,7 @@ def step_4(context, name):
     assert order.producer_id == producer
 
 
+# TODO: Тест фейлится на этом этапе из-за того, что после первого степа не стираются продюсеры
 @then('Producer for given order is not provided')
 def step_5(context):
     order = Order.get(Order.order_id == context.order_id)
